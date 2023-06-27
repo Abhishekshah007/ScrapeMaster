@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="eng-us"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Scraper Tool</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="styles.css" rel="stylesheet">
+    <!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+    
+  </head>
+  <body>
+    <header>
+      <h1 class="nes-text is-primary">Scrape Master Tool</h1>
+      <p class="nes-text is-primary">Enter a website URL to view and scrape:</p>
+      <form id="input-form">
+        <input class="nes-input" type="text" id="website-url-input" name="website-url" placeholder="Enter a URL">
+        <button class="nes-btn" type="submit" id="view">View website</button>
+      </form>
+      <div id="lists-container">
+        <div id="click-list-container">
+          <h2 class="nes-text is-primary">Elements Clicked</h2>
+          <ul id="click-list"></ul>
+        </div>
+        <div id="scraped-list-container">
+          <h2 class="nes-text is-primary">Scraped Elements</h2>
+          <ul class="nes-list is-disc" id="scraped-list"></ul>
+        </div>
+      </div>
+      <button  class="nes-btn" id="scrape-button">Scrape Page</button>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>
